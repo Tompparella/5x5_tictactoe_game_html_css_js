@@ -62,6 +62,7 @@ function mark_box(id) {
   }
 }
 function reset_game() {
+  playerTurn.textContent = "Turn: Player 1";
   var table_length = table[0].length;
   for (var i = 0; i < table_length; i++) {
     for (var j = 0; j < table_length; j++) {
@@ -133,6 +134,7 @@ function check_win(box) {
   }
 
   if (row_count === 5) {
+    playerTurn.textContent = "Game Over!";
     var p_no;
     if (player === "X") {
       p_no = "1";
