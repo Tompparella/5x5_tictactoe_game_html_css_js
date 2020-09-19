@@ -141,7 +141,7 @@ function check_win(box) {
     } else {
       p_no = "2";
     }
-    alert("Player " + p_no + " wins!");
+    alert("Player " + p_no + " won!");
     gameOver = true;
     return;
   }
